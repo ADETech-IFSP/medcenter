@@ -15,6 +15,9 @@ class CreateDoctorsTable extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreign('user_id')->references('id')->on('users');
+            //$table->foregin('form_id')->references('id')->on('form');
         });
     }
 

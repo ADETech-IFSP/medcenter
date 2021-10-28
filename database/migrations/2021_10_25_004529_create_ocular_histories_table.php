@@ -15,7 +15,6 @@ class CreateOcularHistoriesTable extends Migration
     {
         Schema::create('ocular_histories', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('');
         });
     }
 
