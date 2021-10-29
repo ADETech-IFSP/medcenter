@@ -15,6 +15,8 @@ class CreateConsultantsTable extends Migration
     {
         Schema::create('consultants', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->foreign('users_id')->references('id')->on('users');
         }); 
     }
 

@@ -14,7 +14,10 @@ class CreateOcularHistoriesTable extends Migration
     public function up()
     {
         Schema::create('ocular_histories', function (Blueprint $table) {
-            $table->id();            
+            $table->id();
+            $table->integer('eyeInjury');
+            $table->string('manifestationTime');
+            $table->string('ocularHistory');
         });
     }
 
