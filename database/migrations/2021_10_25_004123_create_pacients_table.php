@@ -20,6 +20,7 @@ class CreatePacientsTable extends Migration
             $table->boolean('gender');
             $table->string('skinColor');
             $table->string('profession');
+            $table->timestamps();
         });
     }
 

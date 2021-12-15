@@ -18,6 +18,7 @@ class CreateOcularHistoriesTable extends Migration
             $table->integer('eyeInjury');
             $table->string('manifestationTime');
             $table->string('ocularHistory');
+            $table->timestamps();
         });
     }
 

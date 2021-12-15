@@ -17,6 +17,7 @@ class CreateConsultantsTable extends Migration
             $table->id();
             $table->string('name');
             $table->foreign('users_id')->references('id')->on('users');
+            $table->timestamps();
         }); 
     }
 
