@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Forms extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'eyeInjury',
+        'manifestationTime',
+        'ocularHistory'
+    ];
 }

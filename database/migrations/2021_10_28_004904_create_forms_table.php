@@ -14,7 +14,10 @@ class CreateFormsTable extends Migration
     public function up()
     {
         Schema::create('forms', function (Blueprint $table) {
-            $table->id();            
+            $table->id();
+            $table->integer('eyeInjury');
+            $table->string('manifestationTime');
+            $table->string('ocularHistory');
             $table->foreign('users_id')->references('id')->on('users');
             $table->foreign('pacients_id')->references('id')->on('pacients');
             $table->timestamps();

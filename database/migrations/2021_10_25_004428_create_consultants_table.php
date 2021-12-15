@@ -16,9 +16,13 @@ class CreateConsultantsTable extends Migration
         Schema::create('consultants', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('email');
+            $table->string('password');
+            $table->string('userType');
             $table->foreign('users_id')->references('id')->on('users');
+            $table->foregin('forms_id')->references('id')->on('forms');
             $table->timestamps();
-        }); 
+        });
     }
 
     /**

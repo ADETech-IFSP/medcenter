@@ -10,6 +10,13 @@ class Consultants extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name'
+        'name',
+        'email',
+        'password',
+        'userType'
+    ];
+
+    protected $hidden = [
+        'password'
     ];
 }
