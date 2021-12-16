@@ -3,7 +3,7 @@ const loop = async () => {
         "headers": {
           "accept": "*/*",
           "accept-language": "pt-BR",
-          "authorization": "NTEzMTgwNDg4ODUzMjI1NDgy.YZhOAg.JVvVeeAH6PvBAKKwLMojndkY5lY",
+          "authorization": "NTEzMTgwNDg4ODUzMjI1NDgy.YblDlQ.Ors00myh51YpEUg75Y_05_pa5HQ",
           "content-type": "application/json",
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
@@ -23,7 +23,7 @@ const loop = async () => {
 
     setTimeout(() => {
         loop();
-    }, 35000)
+    }, 70000)
 }
 
 (async function loop(){
