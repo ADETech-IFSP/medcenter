@@ -9,7 +9,6 @@ class ConsultantsController extends Controller
     protected $name;
     protected $email;
     protected $password;
-    protected $userType;
 
     public function getName()
     {
@@ -22,9 +21,5 @@ class ConsultantsController extends Controller
     public function getPassword()
     {
         return $this->password;
-    }
-    public function getUserType()
-    {
-        return $this->userType;
     }
 }

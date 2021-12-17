@@ -7,15 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Consultants extends Model
 {
-    use HasFactory;
+  use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-
-    protected $hidden = [
-        'password'
-    ];
+  protected $fillable = [
+    'userType'
+  ];
 }

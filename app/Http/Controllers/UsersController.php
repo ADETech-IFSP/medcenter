@@ -8,7 +8,6 @@ class UsersController extends Controller
 {
     protected $email;
     protected $password;
-    protected $userType;
     protected $birthDate;
     protected $description;
 
@@ -19,10 +18,6 @@ class UsersController extends Controller
     public function getPassword()
     {
         return $this->password;
-    }
-    public function getUserType()
-    {
-        return $this->userType;
     }
     public function getBirthDate()
     {
