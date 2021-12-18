@@ -16,7 +16,7 @@ class CreateManagerTable extends Migration
         Schema::create('manager', function (Blueprint $table) {
             $table->id();
             $table->string('userType');
-
+            $table->foreign('users_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
