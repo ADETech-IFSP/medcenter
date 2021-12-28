@@ -14,12 +14,24 @@ class FormsController extends Controller
   {
     return $this->eyeInjury;
   }
+  public function setEyeInjury($eyeInjury)
+  {
+    $this->eyeInjury = $eyeInjury;
+  }
   public function getManifestationTime()
   {
     return $this->manifestationTime;
   }
+  public function setManifestationTime($manifestationTime)
+  {
+    $this->manifestationTime = $manifestationTime;
+  }
   public function getOcularHistory()
   {
     return $this->ocularHistory;
+  }
+  public function setOcularHistory($ocularHistory)
+  {
+    $this->ocularHistory = $ocularHistory;
   }
 }

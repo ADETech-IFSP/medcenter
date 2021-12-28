@@ -12,4 +12,8 @@ class ConsultantsController extends Controller
   {
     return $this->userType;
   }
+  public function setUserType($userType)
+  {
+    $this->userType = $userType;
+  }
 }

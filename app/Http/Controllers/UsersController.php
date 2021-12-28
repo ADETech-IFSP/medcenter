@@ -15,12 +15,32 @@ class UsersController extends Controller
     {
         return $this->email;
     }
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
     public function getPassword()
     {
         return $this->password;
     }
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
     public function getBirthDate()
     {
         return $this->birthDate;
+    }
+    public function setBirthDate($birthDate)
+    {
+        $this->birthDate = $birthDate;
+    }
+    public function getDescription()
+    {
+        return $this->description;
+    }
+    public function setDescription($description)
+    {
+        $this->description = $description;
     }
 }
